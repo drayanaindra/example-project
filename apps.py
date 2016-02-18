@@ -16,5 +16,5 @@ api = falcon.API()
 api.add_route('/quote', QuoteResource())
 
 if __name__ == '__main__':
-    httpd = simple_server.make_server('0.0.0.0', 8041, api)
+    httpd = simple_server.make_server('0.0.0.0', 8040, api)
     httpd.serve_forever()
