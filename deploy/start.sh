@@ -9,4 +9,4 @@ USER=ubuntu
 # user/group to run as
 cd /home/lontong/www/example-project
 source /home/lontong/env/env-project/bin/activate
-exec uwsgi --http :8040 --wsgi-file apps.py --callable app
+exec python apps.py
