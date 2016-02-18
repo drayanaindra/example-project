@@ -13,7 +13,7 @@ class QuoteResource:
         resp.body = json.dumps(quote)
  
 api = falcon.API()
-api.add_route('/quote', QuoteResource())
+api.add_route('/', QuoteResource())
 
 if __name__ == '__main__':
     httpd = simple_server.make_server('0.0.0.0', 8040, api)
